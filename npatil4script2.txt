@@ -1,0 +1,39 @@
+USE npatil4assign2db
+LOAD DATA LOCAL INFILE 'loaddatafall2019.txt' INTO TABLE patient;
+
+
+SELECT * FROM patient
+INSERT INTO patient (ohipnumber, firstname, lastname) VALUES ('123456789', 'Nikhil', 'Patil');
+SELECT * FROM patient
+
+
+SELECT * FROM doctors
+INSERT INTO doctors (licensenumber, firstname, lastname, specialty, dateoflicensing) VALUES (RD34, Bernie, Kavorikian, Urologist, 1988-09-09);
+INSERT INTO doctors (licensenumber, firstname, lastname, specialty, dateoflicensing) VALUES (GD56, Joey, Shabado, Podiatrist, 1988-06-24);
+INSERT INTO doctors (licensenumber, firstname, lastname, specialty, dateoflicensing) VALUES (HT45, Ross, Clooney, Surgeon, 1987-06-20);
+INSERT INTO doctors (licensenumber, firstname, lastname, specialty, dateoflicensing) VALUES (YT67, Ben, Spock, Pediatrician, 1955-02-20);
+INSERT INTO doctors (licensenumber, firstname, lastname, specialty, dateoflicensing) VALUES (JK78, Mandy, Webster, Surgeon, 1990-08-08);
+INSERT INTO doctors (licensenumber, firstname, lastname, specialty, dateoflicensing) VALUES (SE66, Colleen, Aziz, Surgeon, 1989-08-24);
+INSERT INTO doctors (licensenumber, firstname, lastname, specialty, dateoflicensing) VALUES ( , Gazi, Yasargil, Neurosurgeon, );
+SELECT * FROM doctors
+
+
+SELECT * FROM hospital
+INSERT INTO hospital (hospitalohipnumber, numberofbeds, hospitalname, city, province, ohipnumber, headlicensenumber, headstartdate, doctorlicense number) VALUES ( , Gazi, Yasargil, Neurosurgeon, )
+SELECT * FROM hospital
+
+SELECT * FROM treats
+INSERT INTO treats (licensenumber, ohipnumber) VALUES (110112113,)
+INSERT INTO treats (licensenumber, ohipnumber) VALUES (444555666,)
+INSERT INTO treats (licensenumber, ohipnumber) VALUES (111222333,)
+INSERT INTO treats (licensenumber, ohipnumber) VALUES (333444555,)
+INSERT INTO treats (licensenumber, ohipnumber) VALUES (667766777,)
+INSERT INTO treats (licensenumber, ohipnumber) VALUES (111222111,)
+INSERT INTO treats (licensenumber, ohipnumber) VALUES (,)
+SELECT * FROM treats
+
+UPDATE doctors SET column1 = value1, column2 = value2, ... WHERE condition;
+UPDATE doctors SET column1 = value1, column2 = value2, ... WHERE condition;
+UPDATE doctors SET column1 = value1, column2 = value2, ... WHERE condition;
+
+sudo mysql -nvvf --verbose -pyourpassword < yourwesternuseridscript2.txt  > yourwesternuseridoutputscript2.txt 2>&1
